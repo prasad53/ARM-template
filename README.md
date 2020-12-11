@@ -26,8 +26,9 @@ Steps to follow:
    2] **az login**   
              
    3]Create resource group:    
-           **az group create --name demoRG --location "East US"**    
-    4]Validate the template:  
+           **az group create --name demoRG --location "East US"**  
+           
+   4]Validate the template:  
             **az deployment group validate --name UItemplate --resource-group demoRG --template-file ./azurevm.json --parameter ./azurevm.parameters.json**                      
           ProvisioningState:Succeeded ===>>>   shows a valid template  
           
