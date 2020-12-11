@@ -8,9 +8,9 @@ Pre-requisites:
       2. Azure account  
 
 Steps to follow:  
-      1. Install ARM tool extension to VS code.  
-       -Quick Open(ctr + P)   
-       -Paste the command and enter  
+    1. Install ARM tool extension to VS code.  
+       - Quick Open(ctr + P)   
+       - Paste the command and enter  
            **ext install azurerm-vscode-tools**   
            
            
