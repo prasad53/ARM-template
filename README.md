@@ -11,7 +11,7 @@ Steps to follow:
       1. Install ARM tool extension to VS code.  
        -Quick Open(ctr + P)   
        -Paste the command and enter  
-           ext install azurerm-vscode-tools    
+           **ext install azurerm-vscode-tools**   
            
            
    2. Clone the repo to VS code.  
