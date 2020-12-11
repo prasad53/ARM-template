@@ -24,10 +24,12 @@ Steps to follow:
    1] Install azure cli:    
                 **curl -L https://aka.ms/InstallAzureCli | bash**     
                        
-   2] **az login**   
+   2] Login to azure account:  
+      **az login**   
              
    3]Create resource group:    
            **az group create --name demoRG --location "East US"**  
+           "provisioningState": "Succeeded" ===>>> shows successful RG creation
            
    4]Validate the template:  
             **az deployment group validate --name UItemplate --resource-group demoRG --template-file ./azurevm.json --parameter ./azurevm.parameters.json**                      
@@ -37,7 +39,7 @@ Steps to follow:
    5]Deploy the template:   
             **az deployment group create --name UItemplate --resource-group demoRG --template-file ./azurevm.json --parameter ./azurevm.parameters.json** 
             
-   ProvisioningState:Succeeded ===>>>   shows a successfull deployment  
+   ProvisioningState:Succeeded ===>>>   shows a successful deployment  
               
    6]Check on azure portal for deployment verification.
    
