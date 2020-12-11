@@ -12,21 +12,33 @@ Steps to follow:
        -Quick Open(ctr + P)   
        -Paste the command and enter  
            ext install azurerm-vscode-tools    
-      2. Clone the repo to VS code.  
+           
+           
+   2. Clone the repo to VS code.  
        - (ctr + sht +p)    
        - https://github.com/prasad53/ARM-template    
-      3.On terminal, go to repo folder and follow the azure commands.  
-                 1] Install azure cli:    
-                       **curl -L https://aka.ms/InstallAzureCli | bash**     
-                 2] **az login**   
-                 3]Create resource group:    
-                       **az group create --name demoRG --location "East US"**    
-                 4]Validate the template:  
-                   **az deployment group validate --name UItemplate --resource-group demoRG --template-file ./azurevm.json --parameter ./azurevm.parameters.json**                      
-                  ProvisioningState:Succeeded ===>>>   shows a valid template  
-                  5]Deploy the template:   
-                    **az deployment group create --name UItemplate --resource-group demoRG --template-file ./azurevm.json --parameter ./azurevm.parameters.json**    
-                        ProvisioningState:Succeeded ===>>>   shows a successfull deployment    
-                  6]Check on azure portal for deployment verification.    
-                  7]Delete resource group:  
-                     **az group delete --resource-group demoRG**  
+       
+       
+   3.On terminal, go to repo folder and follow the azure commands.  
+   1] Install azure cli:    
+                **curl -L https://aka.ms/InstallAzureCli | bash**     
+                       
+   2] **az login**   
+             
+   3]Create resource group:    
+           **az group create --name demoRG --location "East US"**    
+    4]Validate the template:  
+            **az deployment group validate --name UItemplate --resource-group demoRG --template-file ./azurevm.json --parameter ./azurevm.parameters.json**                      
+          ProvisioningState:Succeeded ===>>>   shows a valid template  
+          
+          
+   5]Deploy the template:   
+            **az deployment group create --name UItemplate --resource-group demoRG --template-file ./azurevm.json --parameter ./azurevm.parameters.json** 
+            
+   ProvisioningState:Succeeded ===>>>   shows a successfull deployment  
+              
+   6]Check on azure portal for deployment verification.
+   
+   
+   7]Delete resource group:  
+             **az group delete --resource-group demoRG**  
