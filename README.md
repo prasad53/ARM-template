@@ -20,6 +20,7 @@ Steps to follow:
        
        
    3.On terminal, go to repo folder and follow the azure commands.  
+   
    1] Install azure cli:    
                 **curl -L https://aka.ms/InstallAzureCli | bash**     
                        
