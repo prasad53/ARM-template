@@ -26,7 +26,7 @@ Steps to follow:
                   ProvisioningState:Succeeded ===>>>   shows a valid template  
                   5]Deploy the template:   
                       az deployment group create --name UItemplate --resource-group demoRG --template-file ./azurevm.json --parameter ./azurevm.parameters.json  
-                        ProvisioningState:Succeeded ===>>>   shows a successfull deployment  
-                  6]Check on azure portal for deployment verification.
-                  6]Delete resource group:  
+                        ProvisioningState:Succeeded ===>>>   shows a successfull deployment    
+                  6]Check on azure portal for deployment verification.  
+                  7]Delete resource group:  
                         az group delete --resource-group demoRG  
